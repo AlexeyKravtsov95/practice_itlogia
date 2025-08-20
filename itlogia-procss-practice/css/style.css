@@ -1,0 +1,320 @@
+:root {
+ --background-color: rgb(255, 255, 255);
+ --box-shadow-color: rgba(152, 152, 152, 0.2);
+ --extra-color: rgb(164, 107, 0);
+ --secondary-color: rgb(185, 145, 80);
+ --primary-color: rgb(255, 175, 24);
+ --text-accent-color: rgb(56, 36, 0);
+ --text-color: rgb(24, 26, 26);
+ --bold-font: font-family: MullerBold, sans-serif;
+ --extra-bold-font: font-family: MullerExtraBold, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("../fonts/MullerBold.otf");
+}
+
+@font-face {
+    font-family: MullerExtraBold;
+    src: url("../fonts/MullerExtraBold.otf");
+}
+
+body {
+    font-family: Muller, sans-serif;
+}
+
+body.dark-mode {
+    --background-color: rgb(37, 37, 37);
+    --text-color: rgb(255, 255, 255);
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--background-color);
+    box-shadow: 0 3px 13.8px 1.2px var(--box-shadow-color);
+    padding: 16px 0 15px 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menu {
+            ul {
+                list-style: none;
+                display: flex;
+                width: 489px;
+                justify-content: space-between;
+                .menu-item a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: var(--extra-color);
+                    line-height: 1;
+                }
+            }
+        }
+        .theme {
+            --size: 30px;
+            width: var(--size);
+            height: var(--size);
+            background-color: rgb(37, 37, 37);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+body.dark-mode .theme {
+    background: white;
+}
+
+.main {
+    padding: 132px 0 81px 0;
+    background-color: var(--background-color);
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-info {
+    max-width: 622px;
+}
+
+.main-info h1 {
+    font-size: 45px;
+    font-family: var(--extra-bold-font);
+    line-height: 1.222;
+}
+
+.double-title {
+    color: var(--secondary-color);
+}
+
+.double-title span {
+    color: var(--primary-color);
+}
+
+
+.main-advantages {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage {
+    max-width: 306px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+.advantage-text {
+    margin-left: 16px;
+}
+
+.advantage-title {
+    font-size: 16px;
+    font-family: var(--extra-bold-font);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantage-description {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.main-action {
+    margin-top: 60px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    width: 224px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 22px;
+    font-size: 16px;
+    font-family: Var(--bold-font);
+    color: var(--text-accent-color);
+}
+
+.products {
+    padding: 80px 0 120px 0;
+    background-color: var(--background-color);
+}
+
+.products-title {
+    font-size: 35px;
+    font-family: Var(--bold-font);
+    color: rgb(189, 152, 92);
+    text-align: center;
+}
+
+
+.products-items {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 282px;
+    background-color: var(--background-color);
+    box-shadow: 0 3px 13.8px 1.2px var(--box-shadow-color);
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 24px;
+}
+
+.product-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 18px;
+    font-family: Var(--bold-font);
+    color: var(--text-accent-color);
+}
+
+body.dark-mode .product-title {
+    --text-accent-color: rgb(255, 255, 255);
+}
+
+.product-text {
+    --line-height: 1.286;
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: var(--line-height);
+    height: 49px;
+    margin: 14px 0 15px 0;
+}
+
+.product-action .btn {
+    width: 242px;
+    height: 50px;
+    padding: 17px;
+    line-height: var(--line-height, 100%);
+}
+
+.order {
+    background-color: var(--background-color);
+    padding: 120px 0 115px 0;
+    overflow: hidden;
+}
+
+.order .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.order-text {
+    max-width: 384px;
+}
+
+.order-text-title {
+    font-size: 35px;
+    font-family: var(--extra-bold-font);
+    margin-bottom: 65px;
+}
+
+.order-text-message {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.order-form {
+    margin-left: 122px;
+    max-width: 330px;
+}
+
+.order-input {
+    border-width: 1px;
+    border-color: var(--secondary-color);
+    border-style: solid;
+    background-color: var(--background-color);
+    width: 330px;
+    font-size: 18px;
+    color: rgb(108, 87, 47);
+    padding: 23px 22px 24px 22px;
+    margin-bottom: 24px;
+    height: 60px;
+    outline: none;
+    &::placeholder {
+        color: rgb(203, 168, 110);
+    }
+}
+
+.order .btn {
+    width: 330px;
+    height: 60px;
+}
+
+.order-image {
+    width: 282px;
+    position: relative;
+    margin-left: 78px;
+}
+
+.order-image img {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+}
+
+.footer {
+    background-color: var(--background-color);
+    box-shadow: 0 0 13.8px 1.2px var(--box-shadow-color);
+    padding: 16px 0 15px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.rights {
+    font-size: 12px;
+    color: rgb(186, 179, 179);
+    margin-left: 358px;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}

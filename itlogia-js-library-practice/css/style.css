@@ -138,6 +138,8 @@ body {
     font-size: 16px;
     font-family: MullerBold, sans-serif;
     color: rgb(56, 36, 0);
+    text-decoration: none;
+    text-align: center;
 }
 
 .products {
@@ -283,4 +285,22 @@ body {
 
 .close {
     display: none;
+}
+
+.hvr-sweep-to-right:before {
+    background: rgb(108, 87, 47);
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
 }

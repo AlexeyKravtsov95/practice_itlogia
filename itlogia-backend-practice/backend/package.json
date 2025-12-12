@@ -1,0 +1,19 @@
+{
+  "name": "itlogia-backend-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.3",
+    "nodemon": "^3.1.11"
+  }
+}

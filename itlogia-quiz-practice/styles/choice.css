@@ -25,12 +25,13 @@
 }
 
 .choice-option {
-    background: #fff;
+    background: #FFFFFF;
     border: 1px solid #C1BBBB;
     font-size: 18px;
     line-height: 22px;
     padding: 26px 70px 26px 40px;
-    transition: .2s all ease;
+    position: relative;
+    transition: .2s ease all;
 }
 
 .choice-option:hover {

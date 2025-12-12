@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',
     mode: 'development',
     plugins: [new HtmlWebpackPlugin({
-        'template': './src/index.html'}
+        'template': './src/index.handlebars'}
     )],
     devServer: {
         static: './dist',

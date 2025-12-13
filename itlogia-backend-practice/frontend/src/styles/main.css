@@ -11,6 +11,7 @@ body {
 }
 
 .product {
+    text-decoration: none;
     width: 200px;
     border: 1px solid black;
     border-radius: 10px;

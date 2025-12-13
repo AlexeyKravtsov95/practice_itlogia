@@ -1,4 +1,5 @@
 import {Products} from "./components/products.js";
+import {Product} from "./components/product.js";
 
 export class Router {
     constructor() {
@@ -33,6 +34,14 @@ export class Router {
                 view: "views/products.html",
                 load: () => {
                     new Products();
+                }
+            },
+            {
+                route: '#/product',
+                title: "Продукт",
+                view: "views/product.html",
+                load: () => {
+                    new Product();
                 }
             },
         ];

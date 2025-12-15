@@ -1,8 +1,8 @@
-const IndexController = require('../controllers');
 const express = require('express');
+const productsRoutes = require('./product');
 
-const router = express.Router();
+const router = express.Router({mergeParams: true});
 
-router.get('/', IndexController.getIndex);
+router.use('/products', productsRoutes);
 
 module.exports = router;

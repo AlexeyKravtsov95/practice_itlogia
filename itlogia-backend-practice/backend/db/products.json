@@ -1,15 +1,18 @@
 [
   {
+    "id": 1,
     "title": "Товар 1",
     "description": "Описание товара 1",
     "price": 199
   },
   {
+    "id": 2,
     "title": "Товар 2",
     "description": "Описание товара 2",
     "price": 299
   },
   {
+    "id": 3,
     "title": "Товар 3",
     "description": "Описание товара 3",
     "price": 399
